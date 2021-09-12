@@ -134,6 +134,45 @@ namespace CourseManagementSystem
 
         private ArrayList courseAddedList = new ArrayList();
 
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show(courseAddedList.Count.ToString());
+            //MessageBox.Show(courseDeletedList.Count.ToString());
+            // TODO
+            
+            try
+            {
+                // 选课
+                foreach (String course_id in courseAddedList)
+                {
+                    DataRow newRow = dataSetChangedCourse11.Tables["Student_Course"].NewRow();
+                    newRow["course_id"] = course_id;
+                    newRow["student_id"] = tbxIDSearch.Text;
+                    dataSetChangedCourse11.Tables["Student_Course"].Rows.InsertAt(newRow, 0);
+                }
+                oleDbDataAdapter4.Update(dataSetChangedCourse11, "Student_Course");
+                // 退课
+                foreach (String course_id in courseDeletedList)
+                {
+                    String sqlDelete = "DELETE FROM Student_Course WHERE student_id = '" + tbxIDSearch.Text + "' AND course_id = '" + course_id + "'";
+                    oleDbDataAdapter4.DeleteCommand.CommandText = sqlDelete;
+                    oleDbDataAdapter4.DeleteCommand.Connection.Open();
+                    oleDbDataAdapter4.DeleteCommand.ExecuteNonQuery();
+                    oleDbDataAdapter4.DeleteCommand.Connection.Close();
+                }
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show("课程信息修改失败!\n原因：" + exception.Message);
+                return;
+            }
+            MessageBox.Show("课程信息修改成功！");
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            btnIDSearch_Click(btnIDSearch, new EventArgs());
+        }
     }
     
 }

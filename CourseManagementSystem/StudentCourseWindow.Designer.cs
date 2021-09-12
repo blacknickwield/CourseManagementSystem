@@ -74,11 +74,20 @@ namespace CourseManagementSystem
             this.label7 = new System.Windows.Forms.Label();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.oleDbSelectCommand4 = new System.Data.OleDb.OleDbCommand();
+            this.oleDbInsertCommand2 = new System.Data.OleDb.OleDbCommand();
+            this.oleDbUpdateCommand2 = new System.Data.OleDb.OleDbCommand();
+            this.oleDbDeleteCommand2 = new System.Data.OleDb.OleDbCommand();
+            this.oleDbDataAdapter4 = new System.Data.OleDb.OleDbDataAdapter();
+            this.dataSetChangedCourse11 = new CourseManagementSystem.DataSetChangedCourse1();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetStudent11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetCourseSelected11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetCourse11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetChangedCourse11)).BeginInit();
             this.SuspendLayout();
             // 
             // oleDbSelectCommand1
@@ -489,10 +498,88 @@ namespace CourseManagementSystem
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // btnSubmit
+            // 
+            this.btnSubmit.Location = new System.Drawing.Point(619, 584);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(75, 23);
+            this.btnSubmit.TabIndex = 20;
+            this.btnSubmit.Text = "提交更改";
+            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Location = new System.Drawing.Point(730, 584);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.TabIndex = 21;
+            this.btnCancel.Text = "撤销";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // oleDbSelectCommand4
+            // 
+            this.oleDbSelectCommand4.CommandText = "SELECT   student_id, course_id, grade\r\nFROM      Student_Course";
+            this.oleDbSelectCommand4.Connection = this.oleDbConnection1;
+            // 
+            // oleDbInsertCommand2
+            // 
+            this.oleDbInsertCommand2.CommandText = "INSERT INTO [CourseManagementSystem].[dbo].[Student_Course] ([student_id], [cours" +
+    "e_id], [grade]) VALUES (?, ?, ?)";
+            this.oleDbInsertCommand2.Connection = this.oleDbConnection1;
+            this.oleDbInsertCommand2.Parameters.AddRange(new System.Data.OleDb.OleDbParameter[] {
+            new System.Data.OleDb.OleDbParameter("student_id", System.Data.OleDb.OleDbType.Char, 0, "student_id"),
+            new System.Data.OleDb.OleDbParameter("course_id", System.Data.OleDb.OleDbType.Char, 0, "course_id"),
+            new System.Data.OleDb.OleDbParameter("grade", System.Data.OleDb.OleDbType.Integer, 0, "grade")});
+            // 
+            // oleDbUpdateCommand2
+            // 
+            this.oleDbUpdateCommand2.CommandText = resources.GetString("oleDbUpdateCommand2.CommandText");
+            this.oleDbUpdateCommand2.Connection = this.oleDbConnection1;
+            this.oleDbUpdateCommand2.Parameters.AddRange(new System.Data.OleDb.OleDbParameter[] {
+            new System.Data.OleDb.OleDbParameter("student_id", System.Data.OleDb.OleDbType.Char, 0, "student_id"),
+            new System.Data.OleDb.OleDbParameter("course_id", System.Data.OleDb.OleDbType.Char, 0, "course_id"),
+            new System.Data.OleDb.OleDbParameter("grade", System.Data.OleDb.OleDbType.Integer, 0, "grade"),
+            new System.Data.OleDb.OleDbParameter("Original_student_id", System.Data.OleDb.OleDbType.Char, 0, System.Data.ParameterDirection.Input, false, ((byte)(0)), ((byte)(0)), "student_id", System.Data.DataRowVersion.Original, null),
+            new System.Data.OleDb.OleDbParameter("Original_course_id", System.Data.OleDb.OleDbType.Char, 0, System.Data.ParameterDirection.Input, false, ((byte)(0)), ((byte)(0)), "course_id", System.Data.DataRowVersion.Original, null),
+            new System.Data.OleDb.OleDbParameter("IsNull_grade", System.Data.OleDb.OleDbType.Integer, 0, System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "grade", System.Data.DataRowVersion.Original, true, null),
+            new System.Data.OleDb.OleDbParameter("Original_grade", System.Data.OleDb.OleDbType.Integer, 0, System.Data.ParameterDirection.Input, false, ((byte)(0)), ((byte)(0)), "grade", System.Data.DataRowVersion.Original, null)});
+            // 
+            // oleDbDeleteCommand2
+            // 
+            this.oleDbDeleteCommand2.CommandText = "DELETE FROM [CourseManagementSystem].[dbo].[Student_Course] WHERE (([student_id] " +
+    "= ?) AND ([course_id] = ?) AND ((? = 1 AND [grade] IS NULL) OR ([grade] = ?)))";
+            this.oleDbDeleteCommand2.Connection = this.oleDbConnection1;
+            this.oleDbDeleteCommand2.Parameters.AddRange(new System.Data.OleDb.OleDbParameter[] {
+            new System.Data.OleDb.OleDbParameter("Original_student_id", System.Data.OleDb.OleDbType.Char, 0, System.Data.ParameterDirection.Input, false, ((byte)(0)), ((byte)(0)), "student_id", System.Data.DataRowVersion.Original, null),
+            new System.Data.OleDb.OleDbParameter("Original_course_id", System.Data.OleDb.OleDbType.Char, 0, System.Data.ParameterDirection.Input, false, ((byte)(0)), ((byte)(0)), "course_id", System.Data.DataRowVersion.Original, null),
+            new System.Data.OleDb.OleDbParameter("IsNull_grade", System.Data.OleDb.OleDbType.Integer, 0, System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "grade", System.Data.DataRowVersion.Original, true, null),
+            new System.Data.OleDb.OleDbParameter("Original_grade", System.Data.OleDb.OleDbType.Integer, 0, System.Data.ParameterDirection.Input, false, ((byte)(0)), ((byte)(0)), "grade", System.Data.DataRowVersion.Original, null)});
+            // 
+            // oleDbDataAdapter4
+            // 
+            this.oleDbDataAdapter4.DeleteCommand = this.oleDbDeleteCommand2;
+            this.oleDbDataAdapter4.InsertCommand = this.oleDbInsertCommand2;
+            this.oleDbDataAdapter4.SelectCommand = this.oleDbSelectCommand4;
+            this.oleDbDataAdapter4.TableMappings.AddRange(new System.Data.Common.DataTableMapping[] {
+            new System.Data.Common.DataTableMapping("Table", "Student_Course", new System.Data.Common.DataColumnMapping[] {
+                        new System.Data.Common.DataColumnMapping("student_id", "student_id"),
+                        new System.Data.Common.DataColumnMapping("course_id", "course_id"),
+                        new System.Data.Common.DataColumnMapping("grade", "grade")})});
+            this.oleDbDataAdapter4.UpdateCommand = this.oleDbUpdateCommand2;
+            // 
+            // dataSetChangedCourse11
+            // 
+            this.dataSetChangedCourse11.DataSetName = "DataSetChangedCourse1";
+            this.dataSetChangedCourse11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // StudentCourseWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.label7);
@@ -520,6 +607,7 @@ namespace CourseManagementSystem
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetCourse11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetChangedCourse11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -571,5 +659,13 @@ namespace CourseManagementSystem
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Data.OleDb.OleDbCommand oleDbSelectCommand4;
+        private System.Data.OleDb.OleDbCommand oleDbInsertCommand2;
+        private System.Data.OleDb.OleDbCommand oleDbUpdateCommand2;
+        private System.Data.OleDb.OleDbCommand oleDbDeleteCommand2;
+        private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter4;
+        private DataSetChangedCourse1 dataSetChangedCourse11;
     }
 }

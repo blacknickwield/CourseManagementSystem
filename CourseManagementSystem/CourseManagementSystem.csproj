@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSetChangedCourse1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetChangedCourse1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSetCourse1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -90,6 +95,17 @@
     <EmbeddedResource Include="StudentCourseWindow.resx">
       <DependentUpon>StudentCourseWindow.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DataSetChangedCourse1.xsc">
+      <DependentUpon>DataSetChangedCourse1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetChangedCourse1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetChangedCourse1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetChangedCourse1.xss">
+      <DependentUpon>DataSetChangedCourse1.xsd</DependentUpon>
+    </None>
     <None Include="DataSetCourse1.xsc">
       <DependentUpon>DataSetCourse1.xsd</DependentUpon>
     </None>
