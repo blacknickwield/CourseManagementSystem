@@ -10,3 +10,4 @@ E:\MyProjects\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseMana
 E:\MyProjects\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.exe
 E:\MyProjects\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.pdb
 E:\MyProjects\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.AverageGradeWindow.resources
+E:\MyProjects\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.CourseGradeWindow.resources

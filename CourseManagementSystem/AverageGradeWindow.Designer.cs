@@ -42,6 +42,8 @@ namespace CourseManagementSystem
             this.btnDescending = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.tbxID = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetAverageGrade11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -111,7 +113,7 @@ namespace CourseManagementSystem
             // 
             // btnAscending
             // 
-            this.btnAscending.Location = new System.Drawing.Point(176, 495);
+            this.btnAscending.Location = new System.Drawing.Point(130, 492);
             this.btnAscending.Name = "btnAscending";
             this.btnAscending.Size = new System.Drawing.Size(75, 23);
             this.btnAscending.TabIndex = 1;
@@ -121,7 +123,7 @@ namespace CourseManagementSystem
             // 
             // btnDescending
             // 
-            this.btnDescending.Location = new System.Drawing.Point(370, 495);
+            this.btnDescending.Location = new System.Drawing.Point(301, 492);
             this.btnDescending.Name = "btnDescending";
             this.btnDescending.Size = new System.Drawing.Size(75, 23);
             this.btnDescending.TabIndex = 2;
@@ -131,7 +133,7 @@ namespace CourseManagementSystem
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(676, 495);
+            this.btnSearch.Location = new System.Drawing.Point(630, 492);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
             this.btnSearch.TabIndex = 3;
@@ -141,15 +143,35 @@ namespace CourseManagementSystem
             // 
             // tbxID
             // 
-            this.tbxID.Location = new System.Drawing.Point(570, 497);
+            this.tbxID.Location = new System.Drawing.Point(524, 494);
             this.tbxID.Name = "tbxID";
             this.tbxID.Size = new System.Drawing.Size(100, 21);
             this.tbxID.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(363, 89);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(125, 12);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "学生平均成绩管理界面";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(453, 497);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(65, 12);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "学生学号：";
             // 
             // AverageGradeWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.tbxID);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnDescending);
@@ -179,5 +201,7 @@ namespace CourseManagementSystem
         private System.Windows.Forms.Button btnDescending;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.TextBox tbxID;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

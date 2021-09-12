@@ -48,7 +48,7 @@ namespace CourseManagementSystem
             }
 
             // 显示学生个人信息
-            MessageBox.Show(dataSetStudent11.Tables["Student"].Rows[0]["name"].ToString());
+            //MessageBox.Show(dataSetStudent11.Tables["Student"].Rows[0]["name"].ToString());
             tbxID.Text = dataSetStudent11.Tables["Student"].Rows[0]["id"].ToString();
             tbxName.Text = dataSetStudent11.Tables["Student"].Rows[0]["name"].ToString();
             tbxGender.Text = dataSetStudent11.Tables["Student"].Rows[0]["gender"].ToString();

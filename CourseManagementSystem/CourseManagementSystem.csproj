@@ -52,6 +52,12 @@
     <Compile Include="AverageGradeWindow.Designer.cs">
       <DependentUpon>AverageGradeWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="CourseGradeWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CourseGradeWindow.Designer.cs">
+      <DependentUpon>CourseGradeWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataSetAverageGrade1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -67,10 +73,40 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetCourse1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSetCourseGrade1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetCourseGrade1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetCourseGrade2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetCourseGrade2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetCourseGrade3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetCourseGrade3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetCourseGrade4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetCourseGrade4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetCourseGrade5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetCourseGrade5.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSetCourseSelected1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetCourseSelected1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetQueryCourse1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetQueryCourse1.xsd</DependentUpon>
     </Compile>
     <Compile Include="DataSetStudent1.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -93,6 +129,9 @@
     </Compile>
     <EmbeddedResource Include="AverageGradeWindow.resx">
       <DependentUpon>AverageGradeWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CourseGradeWindow.resx">
+      <DependentUpon>CourseGradeWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -142,6 +181,61 @@
     <None Include="DataSetCourse1.xss">
       <DependentUpon>DataSetCourse1.xsd</DependentUpon>
     </None>
+    <None Include="DataSetCourseGrade1.xsc">
+      <DependentUpon>DataSetCourseGrade1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetCourseGrade1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetCourseGrade1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetCourseGrade1.xss">
+      <DependentUpon>DataSetCourseGrade1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetCourseGrade2.xsc">
+      <DependentUpon>DataSetCourseGrade2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetCourseGrade2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetCourseGrade2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetCourseGrade2.xss">
+      <DependentUpon>DataSetCourseGrade2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetCourseGrade3.xsc">
+      <DependentUpon>DataSetCourseGrade3.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetCourseGrade3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetCourseGrade3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetCourseGrade3.xss">
+      <DependentUpon>DataSetCourseGrade3.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetCourseGrade4.xsc">
+      <DependentUpon>DataSetCourseGrade4.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetCourseGrade4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetCourseGrade4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetCourseGrade4.xss">
+      <DependentUpon>DataSetCourseGrade4.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetCourseGrade5.xsc">
+      <DependentUpon>DataSetCourseGrade5.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetCourseGrade5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetCourseGrade5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetCourseGrade5.xss">
+      <DependentUpon>DataSetCourseGrade5.xsd</DependentUpon>
+    </None>
     <None Include="DataSetCourseSelected1.xsc">
       <DependentUpon>DataSetCourseSelected1.xsd</DependentUpon>
     </None>
@@ -152,6 +246,17 @@
     </None>
     <None Include="DataSetCourseSelected1.xss">
       <DependentUpon>DataSetCourseSelected1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetQueryCourse1.xsc">
+      <DependentUpon>DataSetQueryCourse1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetQueryCourse1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetQueryCourse1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetQueryCourse1.xss">
+      <DependentUpon>DataSetQueryCourse1.xsd</DependentUpon>
     </None>
     <None Include="DataSetStudent1.xsc">
       <DependentUpon>DataSetStudent1.xsd</DependentUpon>

@@ -82,6 +82,7 @@ namespace CourseManagementSystem
             this.oleDbDeleteCommand2 = new System.Data.OleDb.OleDbCommand();
             this.oleDbDataAdapter4 = new System.Data.OleDb.OleDbDataAdapter();
             this.dataSetChangedCourse11 = new CourseManagementSystem.DataSetChangedCourse1();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetStudent11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetCourseSelected11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -166,7 +167,7 @@ namespace CourseManagementSystem
             // 
             // btnIDSearch
             // 
-            this.btnIDSearch.Location = new System.Drawing.Point(135, 25);
+            this.btnIDSearch.Location = new System.Drawing.Point(137, 59);
             this.btnIDSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnIDSearch.Name = "btnIDSearch";
             this.btnIDSearch.Size = new System.Drawing.Size(58, 31);
@@ -177,7 +178,7 @@ namespace CourseManagementSystem
             // 
             // tbxIDSearch
             // 
-            this.tbxIDSearch.Location = new System.Drawing.Point(21, 29);
+            this.tbxIDSearch.Location = new System.Drawing.Point(23, 63);
             this.tbxIDSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbxIDSearch.Name = "tbxIDSearch";
             this.tbxIDSearch.Size = new System.Drawing.Size(90, 21);
@@ -378,7 +379,7 @@ namespace CourseManagementSystem
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 76);
+            this.label1.Location = new System.Drawing.Point(21, 110);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 12);
             this.label1.TabIndex = 6;
@@ -387,7 +388,7 @@ namespace CourseManagementSystem
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(198, 76);
+            this.label2.Location = new System.Drawing.Point(200, 110);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 12);
             this.label2.TabIndex = 7;
@@ -396,7 +397,7 @@ namespace CourseManagementSystem
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(320, 76);
+            this.label3.Location = new System.Drawing.Point(322, 110);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 12);
             this.label3.TabIndex = 8;
@@ -405,7 +406,7 @@ namespace CourseManagementSystem
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(406, 76);
+            this.label4.Location = new System.Drawing.Point(408, 110);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 12);
             this.label4.TabIndex = 9;
@@ -414,7 +415,7 @@ namespace CourseManagementSystem
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(497, 76);
+            this.label5.Location = new System.Drawing.Point(499, 110);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(41, 12);
             this.label5.TabIndex = 10;
@@ -423,7 +424,7 @@ namespace CourseManagementSystem
             // tbxID
             // 
             this.tbxID.Enabled = false;
-            this.tbxID.Location = new System.Drawing.Point(81, 73);
+            this.tbxID.Location = new System.Drawing.Point(83, 107);
             this.tbxID.Name = "tbxID";
             this.tbxID.Size = new System.Drawing.Size(100, 21);
             this.tbxID.TabIndex = 11;
@@ -431,7 +432,7 @@ namespace CourseManagementSystem
             // tbxName
             // 
             this.tbxName.Enabled = false;
-            this.tbxName.Location = new System.Drawing.Point(232, 73);
+            this.tbxName.Location = new System.Drawing.Point(234, 107);
             this.tbxName.Name = "tbxName";
             this.tbxName.Size = new System.Drawing.Size(73, 21);
             this.tbxName.TabIndex = 12;
@@ -439,7 +440,7 @@ namespace CourseManagementSystem
             // tbxGender
             // 
             this.tbxGender.Enabled = false;
-            this.tbxGender.Location = new System.Drawing.Point(357, 73);
+            this.tbxGender.Location = new System.Drawing.Point(359, 107);
             this.tbxGender.Name = "tbxGender";
             this.tbxGender.Size = new System.Drawing.Size(28, 21);
             this.tbxGender.TabIndex = 13;
@@ -447,7 +448,7 @@ namespace CourseManagementSystem
             // tbxAge
             // 
             this.tbxAge.Enabled = false;
-            this.tbxAge.Location = new System.Drawing.Point(443, 73);
+            this.tbxAge.Location = new System.Drawing.Point(445, 107);
             this.tbxAge.Name = "tbxAge";
             this.tbxAge.Size = new System.Drawing.Size(33, 21);
             this.tbxAge.TabIndex = 14;
@@ -455,7 +456,7 @@ namespace CourseManagementSystem
             // tbxClass
             // 
             this.tbxClass.Enabled = false;
-            this.tbxClass.Location = new System.Drawing.Point(534, 73);
+            this.tbxClass.Location = new System.Drawing.Point(536, 107);
             this.tbxClass.Name = "tbxClass";
             this.tbxClass.Size = new System.Drawing.Size(73, 21);
             this.tbxClass.TabIndex = 15;
@@ -574,10 +575,20 @@ namespace CourseManagementSystem
             this.dataSetChangedCourse11.DataSetName = "DataSetChangedCourse1";
             this.dataSetChangedCourse11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(357, 32);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(101, 12);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "学生课程管理界面";
+            // 
             // StudentCourseWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.btnAdd);
@@ -667,5 +678,6 @@ namespace CourseManagementSystem
         private System.Data.OleDb.OleDbCommand oleDbDeleteCommand2;
         private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter4;
         private DataSetChangedCourse1 dataSetChangedCourse11;
+        private System.Windows.Forms.Label label8;
     }
 }

@@ -33,7 +33,7 @@ namespace CourseManagementSystem
             this.btnStudentCourse = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnAverageGrade = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnCourseGrade = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // gpbWindow
@@ -77,22 +77,23 @@ namespace CourseManagementSystem
             this.btnAverageGrade.UseVisualStyleBackColor = true;
             this.btnAverageGrade.Click += new System.EventHandler(this.btnAverageGrade_Click);
             // 
-            // button4
+            // btnCourseGrade
             // 
-            this.button4.Location = new System.Drawing.Point(67, 218);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(56, 32);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnCourseGrade.Location = new System.Drawing.Point(67, 218);
+            this.btnCourseGrade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCourseGrade.Name = "btnCourseGrade";
+            this.btnCourseGrade.Size = new System.Drawing.Size(109, 29);
+            this.btnCourseGrade.TabIndex = 4;
+            this.btnCourseGrade.Text = "课程成绩分布界面";
+            this.btnCourseGrade.UseVisualStyleBackColor = true;
+            this.btnCourseGrade.Click += new System.EventHandler(this.btnCourseGrade_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1098, 686);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnCourseGrade);
             this.Controls.Add(this.btnAverageGrade);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnStudentCourse);
@@ -111,7 +112,7 @@ namespace CourseManagementSystem
         private System.Windows.Forms.Button btnStudentCourse;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnAverageGrade;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnCourseGrade;
     }
 }
 
