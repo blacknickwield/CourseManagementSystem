@@ -32,7 +32,7 @@ namespace CourseManagementSystem
             this.gpbWindow = new System.Windows.Forms.GroupBox();
             this.btnStudentCourse = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnAverageGrade = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -51,9 +51,9 @@ namespace CourseManagementSystem
             this.btnStudentCourse.Location = new System.Drawing.Point(67, 42);
             this.btnStudentCourse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnStudentCourse.Name = "btnStudentCourse";
-            this.btnStudentCourse.Size = new System.Drawing.Size(56, 28);
+            this.btnStudentCourse.Size = new System.Drawing.Size(123, 30);
             this.btnStudentCourse.TabIndex = 1;
-            this.btnStudentCourse.Text = "button1";
+            this.btnStudentCourse.Text = "学生课程管理界面";
             this.btnStudentCourse.UseVisualStyleBackColor = true;
             this.btnStudentCourse.Click += new System.EventHandler(this.btnStudentCourse_Click);
             // 
@@ -64,18 +64,18 @@ namespace CourseManagementSystem
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(56, 30);
             this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnAverageGrade
             // 
-            this.button3.Location = new System.Drawing.Point(67, 164);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(56, 29);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnAverageGrade.Location = new System.Drawing.Point(67, 164);
+            this.btnAverageGrade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAverageGrade.Name = "btnAverageGrade";
+            this.btnAverageGrade.Size = new System.Drawing.Size(143, 30);
+            this.btnAverageGrade.TabIndex = 3;
+            this.btnAverageGrade.Text = "学生平均成绩管理界面";
+            this.btnAverageGrade.UseVisualStyleBackColor = true;
+            this.btnAverageGrade.Click += new System.EventHandler(this.btnAverageGrade_Click);
             // 
             // button4
             // 
@@ -93,7 +93,7 @@ namespace CourseManagementSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1098, 686);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnAverageGrade);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnStudentCourse);
             this.Controls.Add(this.gpbWindow);
@@ -110,7 +110,7 @@ namespace CourseManagementSystem
         private System.Windows.Forms.GroupBox gpbWindow;
         private System.Windows.Forms.Button btnStudentCourse;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnAverageGrade;
         private System.Windows.Forms.Button button4;
     }
 }

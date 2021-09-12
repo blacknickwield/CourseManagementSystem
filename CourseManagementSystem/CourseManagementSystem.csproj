@@ -46,6 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AverageGradeWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AverageGradeWindow.Designer.cs">
+      <DependentUpon>AverageGradeWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetAverageGrade1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetAverageGrade1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSetChangedCourse1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -80,6 +91,9 @@
     <Compile Include="StudentCourseWindow.Designer.cs">
       <DependentUpon>StudentCourseWindow.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AverageGradeWindow.resx">
+      <DependentUpon>AverageGradeWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,6 +109,17 @@
     <EmbeddedResource Include="StudentCourseWindow.resx">
       <DependentUpon>StudentCourseWindow.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DataSetAverageGrade1.xsc">
+      <DependentUpon>DataSetAverageGrade1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetAverageGrade1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetAverageGrade1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetAverageGrade1.xss">
+      <DependentUpon>DataSetAverageGrade1.xsd</DependentUpon>
+    </None>
     <None Include="DataSetChangedCourse1.xsc">
       <DependentUpon>DataSetChangedCourse1.xsd</DependentUpon>
     </None>

@@ -114,7 +114,7 @@ namespace CourseManagementSystem
             dataSetCourseSelected11.Tables["ClassRoom"].Rows.RemoveAt(dataGridView1.CurrentRow.Index);
         }
         
-        // 选课
+        // 选课 退课
         private void btnAdd_Click(object sender, EventArgs e)
         {
             DataRow oldRow = dataSetCourse11.Tables["ClassRoom"].Rows[dataGridView2.CurrentRow.Index];
@@ -136,10 +136,6 @@ namespace CourseManagementSystem
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show(courseAddedList.Count.ToString());
-            //MessageBox.Show(courseDeletedList.Count.ToString());
-            // TODO
-            
             try
             {
                 // 选课
@@ -174,5 +170,4 @@ namespace CourseManagementSystem
             btnIDSearch_Click(btnIDSearch, new EventArgs());
         }
     }
-    
 }
