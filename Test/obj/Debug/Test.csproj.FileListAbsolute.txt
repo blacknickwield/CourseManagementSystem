@@ -1,0 +1,10 @@
+E:\MyProjects\CourseManagementSystem\Test\bin\Debug\Test.exe.config
+E:\MyProjects\CourseManagementSystem\Test\bin\Debug\Test.exe
+E:\MyProjects\CourseManagementSystem\Test\bin\Debug\Test.pdb
+E:\MyProjects\CourseManagementSystem\Test\obj\Debug\Test.csprojAssemblyReference.cache
+E:\MyProjects\CourseManagementSystem\Test\obj\Debug\Test.Form1.resources
+E:\MyProjects\CourseManagementSystem\Test\obj\Debug\Test.Properties.Resources.resources
+E:\MyProjects\CourseManagementSystem\Test\obj\Debug\Test.csproj.GenerateResource.cache
+E:\MyProjects\CourseManagementSystem\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+E:\MyProjects\CourseManagementSystem\Test\obj\Debug\Test.exe
+E:\MyProjects\CourseManagementSystem\Test\obj\Debug\Test.pdb

@@ -1,0 +1,11 @@
+E:\MyProjects\CourseManagementSystem\CourseManagementSystem\bin\Debug\CourseManagementSystem.exe.config
+E:\MyProjects\CourseManagementSystem\CourseManagementSystem\bin\Debug\CourseManagementSystem.exe
+E:\MyProjects\CourseManagementSystem\CourseManagementSystem\bin\Debug\CourseManagementSystem.pdb
+E:\MyProjects\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.csprojAssemblyReference.cache
+E:\MyProjects\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.Form1.resources
+E:\MyProjects\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.Properties.Resources.resources
+E:\MyProjects\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.StudentCourseWindow.resources
+E:\MyProjects\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.csproj.GenerateResource.cache
+E:\MyProjects\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.csproj.CoreCompileInputs.cache
+E:\MyProjects\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.exe
+E:\MyProjects\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.pdb
