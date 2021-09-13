@@ -11,3 +11,5 @@ E:\MyProjects\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseMana
 E:\MyProjects\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.pdb
 E:\MyProjects\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.AverageGradeWindow.resources
 E:\MyProjects\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.CourseGradeWindow.resources
+E:\MyProjects\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.GradeUpdateWindow.resources
+E:\MyProjects\CourseManagementSystem\CourseManagementSystem\obj\Debug\CourseManagementSystem.StudentGradeWindow.resources

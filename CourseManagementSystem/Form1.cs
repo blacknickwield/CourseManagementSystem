@@ -17,12 +17,13 @@ namespace CourseManagementSystem
             InitializeComponent();
         }
         private StudentCourseWindow studentCourseWindow;
+        private StudentGradeWindow studentGradeWindow;
         private AverageGradeWindow averageGradeWindow;
         private CourseGradeWindow courseGradeWindow;
         private void Form1_Load(object sender, EventArgs e)
         {
             studentCourseWindow = new StudentCourseWindow();
-
+            studentGradeWindow = new StudentGradeWindow();
             averageGradeWindow = new AverageGradeWindow();
             courseGradeWindow = new CourseGradeWindow();
         }
@@ -46,6 +47,13 @@ namespace CourseManagementSystem
             courseGradeWindow.Show();
             gpbWindow.Controls.Clear();
             gpbWindow.Controls.Add(courseGradeWindow);
+        }
+
+        private void btnGradeUpdate_Click(object sender, EventArgs e)
+        {
+            studentGradeWindow.Show();
+            gpbWindow.Controls.Clear();
+            gpbWindow.Controls.Add(studentGradeWindow);
         }
     }
 }
