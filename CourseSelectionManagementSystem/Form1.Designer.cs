@@ -36,52 +36,58 @@ namespace CourseSelectionManagementSystem
             this.btnLogIn = new System.Windows.Forms.Button();
             this.btnSignOut = new System.Windows.Forms.Button();
             this.oleDbSelectCommand1 = new System.Data.OleDb.OleDbCommand();
+            this.oleDbConnection1 = new System.Data.OleDb.OleDbConnection();
             this.oleDbInsertCommand1 = new System.Data.OleDb.OleDbCommand();
             this.oleDbUpdateCommand1 = new System.Data.OleDb.OleDbCommand();
             this.oleDbDeleteCommand1 = new System.Data.OleDb.OleDbCommand();
             this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
-            this.oleDbConnection1 = new System.Data.OleDb.OleDbConnection();
             this.dataSetStudentInfo11 = new CourseSelectionManagementSystem.DataSetStudentInfo1();
+            this.labelTitle = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetStudentInfo11)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(420, 193);
+            this.label1.Location = new System.Drawing.Point(204, 132);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 24);
+            this.label1.Size = new System.Drawing.Size(29, 12);
             this.label1.TabIndex = 1;
             this.label1.Text = "学号";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(420, 290);
+            this.label2.Location = new System.Drawing.Point(204, 181);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 24);
+            this.label2.Size = new System.Drawing.Size(29, 12);
             this.label2.TabIndex = 2;
             this.label2.Text = "密码";
             // 
             // tbxID
             // 
-            this.tbxID.Location = new System.Drawing.Point(522, 190);
+            this.tbxID.Location = new System.Drawing.Point(255, 131);
+            this.tbxID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbxID.Name = "tbxID";
-            this.tbxID.Size = new System.Drawing.Size(302, 35);
+            this.tbxID.Size = new System.Drawing.Size(153, 21);
             this.tbxID.TabIndex = 3;
             // 
             // tbxPassword
             // 
-            this.tbxPassword.Location = new System.Drawing.Point(522, 287);
+            this.tbxPassword.Location = new System.Drawing.Point(255, 180);
+            this.tbxPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbxPassword.Name = "tbxPassword";
-            this.tbxPassword.Size = new System.Drawing.Size(302, 35);
+            this.tbxPassword.Size = new System.Drawing.Size(153, 21);
             this.tbxPassword.TabIndex = 4;
             // 
             // btnLogIn
             // 
-            this.btnLogIn.Location = new System.Drawing.Point(459, 412);
+            this.btnLogIn.Location = new System.Drawing.Point(224, 242);
+            this.btnLogIn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLogIn.Name = "btnLogIn";
-            this.btnLogIn.Size = new System.Drawing.Size(124, 54);
+            this.btnLogIn.Size = new System.Drawing.Size(62, 27);
             this.btnLogIn.TabIndex = 5;
             this.btnLogIn.Text = "登录";
             this.btnLogIn.UseVisualStyleBackColor = true;
@@ -89,9 +95,10 @@ namespace CourseSelectionManagementSystem
             // 
             // btnSignOut
             // 
-            this.btnSignOut.Location = new System.Drawing.Point(703, 408);
+            this.btnSignOut.Location = new System.Drawing.Point(346, 240);
+            this.btnSignOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSignOut.Name = "btnSignOut";
-            this.btnSignOut.Size = new System.Drawing.Size(121, 58);
+            this.btnSignOut.Size = new System.Drawing.Size(60, 29);
             this.btnSignOut.TabIndex = 6;
             this.btnSignOut.Text = "退出";
             this.btnSignOut.UseVisualStyleBackColor = true;
@@ -101,6 +108,11 @@ namespace CourseSelectionManagementSystem
             // 
             this.oleDbSelectCommand1.CommandText = "SELECT name, id, passwd\r\nFROM   Student";
             this.oleDbSelectCommand1.Connection = this.oleDbConnection1;
+            // 
+            // oleDbConnection1
+            // 
+            this.oleDbConnection1.ConnectionString = "Provider=SQLNCLI11;Data Source=LAPTOP-KNJPVQ35\\SQLEXPRESS;Integrated Security=SSP" +
+    "I;Initial Catalog=CourseManagementSystem";
             // 
             // oleDbInsertCommand1
             // 
@@ -147,29 +159,37 @@ namespace CourseSelectionManagementSystem
                         new System.Data.Common.DataColumnMapping("passwd", "passwd")})});
             this.oleDbDataAdapter1.UpdateCommand = this.oleDbUpdateCommand1;
             // 
-            // oleDbConnection1
-            // 
-            this.oleDbConnection1.ConnectionString = "Provider=SQLNCLI11;Data Source=LAPTOP-KNJPVQ35\\SQLEXPRESS;Integrated Security=SSP" +
-    "I;Initial Catalog=CourseManagementSystem";
-            // 
             // dataSetStudentInfo11
             // 
             this.dataSetStudentInfo11.DataSetName = "DataSetStudentInfo1";
             this.dataSetStudentInfo11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // labelTitle
+            // 
+            this.labelTitle.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelTitle.Location = new System.Drawing.Point(201, 46);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(214, 65);
+            this.labelTitle.TabIndex = 7;
+            this.labelTitle.Text = "label3";
+            this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1250, 712);
+            this.ClientSize = new System.Drawing.Size(625, 356);
+            this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.btnSignOut);
             this.Controls.Add(this.btnLogIn);
             this.Controls.Add(this.tbxPassword);
             this.Controls.Add(this.tbxID);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "选课管理系统";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataSetStudentInfo11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -191,6 +211,7 @@ namespace CourseSelectionManagementSystem
         private System.Data.OleDb.OleDbCommand oleDbDeleteCommand1;
         private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter1;
         private DataSetStudentInfo1 dataSetStudentInfo11;
+        private System.Windows.Forms.Label labelTitle;
     }
 }
 

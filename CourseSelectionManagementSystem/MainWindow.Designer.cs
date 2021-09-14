@@ -36,19 +36,9 @@ namespace CourseSelectionManagementSystem
             this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
             this.dataSetCourse11 = new CourseSelectionManagementSystem.DataSetCourse1();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.courseNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.creditDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.timeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.teacherNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.oleDbSelectCommand2 = new System.Data.OleDb.OleDbCommand();
             this.oleDbDataAdapter2 = new System.Data.OleDb.OleDbDataAdapter();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.iDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.courseNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.creditDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.timeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.teacherNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataSetSelectedCourse11 = new CourseSelectionManagementSystem.DataSetSelectedCourse1();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -62,8 +52,6 @@ namespace CourseSelectionManagementSystem
             this.btnSelect = new System.Windows.Forms.Button();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.oleDbSelectCommand3 = new System.Data.OleDb.OleDbCommand();
             this.oleDbInsertCommand1 = new System.Data.OleDb.OleDbCommand();
             this.oleDbUpdateCommand1 = new System.Data.OleDb.OleDbCommand();
@@ -72,6 +60,20 @@ namespace CourseSelectionManagementSystem
             this.dataSetCourseChanged11 = new CourseSelectionManagementSystem.DataSetCourseChanged1();
             this.labelCourseAvailable = new System.Windows.Forms.Label();
             this.labelCreditAvailable = new System.Windows.Forms.Label();
+            this.labelTitle = new System.Windows.Forms.Label();
+            this.iDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.courseNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.creditDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.teacherNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.courseNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.creditDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.teacherNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.labelHint = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetCourse11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -119,53 +121,13 @@ namespace CourseSelectionManagementSystem
             this.teacherNameDataGridViewTextBoxColumn});
             this.dataGridView1.DataMember = "Course";
             this.dataGridView1.DataSource = this.dataSetCourse11;
-            this.dataGridView1.Location = new System.Drawing.Point(61, 344);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Location = new System.Drawing.Point(61, 402);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 37;
             this.dataGridView1.Size = new System.Drawing.Size(810, 274);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // iDDataGridViewTextBoxColumn
-            // 
-            this.iDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.MinimumWidth = 10;
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            // 
-            // courseNameDataGridViewTextBoxColumn
-            // 
-            this.courseNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.courseNameDataGridViewTextBoxColumn.DataPropertyName = "Course Name";
-            this.courseNameDataGridViewTextBoxColumn.HeaderText = "Course Name";
-            this.courseNameDataGridViewTextBoxColumn.MinimumWidth = 10;
-            this.courseNameDataGridViewTextBoxColumn.Name = "courseNameDataGridViewTextBoxColumn";
-            // 
-            // creditDataGridViewTextBoxColumn
-            // 
-            this.creditDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.creditDataGridViewTextBoxColumn.DataPropertyName = "Credit";
-            this.creditDataGridViewTextBoxColumn.HeaderText = "Credit";
-            this.creditDataGridViewTextBoxColumn.MinimumWidth = 10;
-            this.creditDataGridViewTextBoxColumn.Name = "creditDataGridViewTextBoxColumn";
-            // 
-            // timeDataGridViewTextBoxColumn
-            // 
-            this.timeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.timeDataGridViewTextBoxColumn.DataPropertyName = "Time";
-            this.timeDataGridViewTextBoxColumn.HeaderText = "Time";
-            this.timeDataGridViewTextBoxColumn.MinimumWidth = 10;
-            this.timeDataGridViewTextBoxColumn.Name = "timeDataGridViewTextBoxColumn";
-            // 
-            // teacherNameDataGridViewTextBoxColumn
-            // 
-            this.teacherNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.teacherNameDataGridViewTextBoxColumn.DataPropertyName = "Teacher Name";
-            this.teacherNameDataGridViewTextBoxColumn.HeaderText = "Teacher Name";
-            this.teacherNameDataGridViewTextBoxColumn.MinimumWidth = 10;
-            this.teacherNameDataGridViewTextBoxColumn.Name = "teacherNameDataGridViewTextBoxColumn";
             // 
             // oleDbSelectCommand2
             // 
@@ -195,53 +157,13 @@ namespace CourseSelectionManagementSystem
             this.teacherNameDataGridViewTextBoxColumn1});
             this.dataGridView2.DataMember = "Course";
             this.dataGridView2.DataSource = this.dataSetSelectedCourse11;
-            this.dataGridView2.Location = new System.Drawing.Point(56, 80);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView2.Location = new System.Drawing.Point(61, 119);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 82;
             this.dataGridView2.RowTemplate.Height = 37;
             this.dataGridView2.Size = new System.Drawing.Size(810, 211);
             this.dataGridView2.TabIndex = 1;
-            // 
-            // iDDataGridViewTextBoxColumn1
-            // 
-            this.iDDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.iDDataGridViewTextBoxColumn1.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn1.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn1.MinimumWidth = 10;
-            this.iDDataGridViewTextBoxColumn1.Name = "iDDataGridViewTextBoxColumn1";
-            // 
-            // courseNameDataGridViewTextBoxColumn1
-            // 
-            this.courseNameDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.courseNameDataGridViewTextBoxColumn1.DataPropertyName = "Course Name";
-            this.courseNameDataGridViewTextBoxColumn1.HeaderText = "Course Name";
-            this.courseNameDataGridViewTextBoxColumn1.MinimumWidth = 10;
-            this.courseNameDataGridViewTextBoxColumn1.Name = "courseNameDataGridViewTextBoxColumn1";
-            // 
-            // creditDataGridViewTextBoxColumn1
-            // 
-            this.creditDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.creditDataGridViewTextBoxColumn1.DataPropertyName = "Credit";
-            this.creditDataGridViewTextBoxColumn1.HeaderText = "Credit";
-            this.creditDataGridViewTextBoxColumn1.MinimumWidth = 10;
-            this.creditDataGridViewTextBoxColumn1.Name = "creditDataGridViewTextBoxColumn1";
-            // 
-            // timeDataGridViewTextBoxColumn1
-            // 
-            this.timeDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.timeDataGridViewTextBoxColumn1.DataPropertyName = "Time";
-            this.timeDataGridViewTextBoxColumn1.HeaderText = "Time";
-            this.timeDataGridViewTextBoxColumn1.MinimumWidth = 10;
-            this.timeDataGridViewTextBoxColumn1.Name = "timeDataGridViewTextBoxColumn1";
-            // 
-            // teacherNameDataGridViewTextBoxColumn1
-            // 
-            this.teacherNameDataGridViewTextBoxColumn1.DataPropertyName = "Teacher Name";
-            this.teacherNameDataGridViewTextBoxColumn1.HeaderText = "Teacher Name";
-            this.teacherNameDataGridViewTextBoxColumn1.MinimumWidth = 10;
-            this.teacherNameDataGridViewTextBoxColumn1.Name = "teacherNameDataGridViewTextBoxColumn1";
-            this.teacherNameDataGridViewTextBoxColumn1.Width = 145;
             // 
             // dataSetSelectedCourse11
             // 
@@ -251,7 +173,7 @@ namespace CourseSelectionManagementSystem
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(897, 25);
+            this.label1.Location = new System.Drawing.Point(909, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 12);
             this.label1.TabIndex = 2;
@@ -260,7 +182,7 @@ namespace CourseSelectionManagementSystem
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(897, 59);
+            this.label2.Location = new System.Drawing.Point(909, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 12);
             this.label2.TabIndex = 3;
@@ -269,7 +191,7 @@ namespace CourseSelectionManagementSystem
             // tbxStudentID
             // 
             this.tbxStudentID.Enabled = false;
-            this.tbxStudentID.Location = new System.Drawing.Point(936, 22);
+            this.tbxStudentID.Location = new System.Drawing.Point(948, 47);
             this.tbxStudentID.Name = "tbxStudentID";
             this.tbxStudentID.Size = new System.Drawing.Size(100, 21);
             this.tbxStudentID.TabIndex = 4;
@@ -277,7 +199,7 @@ namespace CourseSelectionManagementSystem
             // tbxName
             // 
             this.tbxName.Enabled = false;
-            this.tbxName.Location = new System.Drawing.Point(936, 56);
+            this.tbxName.Location = new System.Drawing.Point(948, 81);
             this.tbxName.Name = "tbxName";
             this.tbxName.Size = new System.Drawing.Size(100, 21);
             this.tbxName.TabIndex = 5;
@@ -285,25 +207,25 @@ namespace CourseSelectionManagementSystem
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(897, 123);
+            this.label3.Location = new System.Drawing.Point(909, 148);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 12);
+            this.label3.Size = new System.Drawing.Size(89, 12);
             this.label3.TabIndex = 6;
-            this.label3.Text = "课程数量：";
+            this.label3.Text = "已选课程数量：";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(897, 148);
+            this.label4.Location = new System.Drawing.Point(909, 173);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 12);
+            this.label4.Size = new System.Drawing.Size(77, 12);
             this.label4.TabIndex = 7;
-            this.label4.Text = "总学分：";
+            this.label4.Text = "已选总学分：";
             // 
             // labelTotalNumber
             // 
             this.labelTotalNumber.AutoSize = true;
-            this.labelTotalNumber.Location = new System.Drawing.Point(968, 123);
+            this.labelTotalNumber.Location = new System.Drawing.Point(994, 148);
             this.labelTotalNumber.Name = "labelTotalNumber";
             this.labelTotalNumber.Size = new System.Drawing.Size(41, 12);
             this.labelTotalNumber.TabIndex = 8;
@@ -312,7 +234,7 @@ namespace CourseSelectionManagementSystem
             // labelTotalCredit
             // 
             this.labelTotalCredit.AutoSize = true;
-            this.labelTotalCredit.Location = new System.Drawing.Point(968, 148);
+            this.labelTotalCredit.Location = new System.Drawing.Point(994, 173);
             this.labelTotalCredit.Name = "labelTotalCredit";
             this.labelTotalCredit.Size = new System.Drawing.Size(41, 12);
             this.labelTotalCredit.TabIndex = 9;
@@ -320,7 +242,7 @@ namespace CourseSelectionManagementSystem
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(796, 316);
+            this.btnRemove.Location = new System.Drawing.Point(796, 351);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(75, 23);
             this.btnRemove.TabIndex = 10;
@@ -330,7 +252,7 @@ namespace CourseSelectionManagementSystem
             // 
             // btnSelect
             // 
-            this.btnSelect.Location = new System.Drawing.Point(819, 624);
+            this.btnSelect.Location = new System.Drawing.Point(796, 705);
             this.btnSelect.Name = "btnSelect";
             this.btnSelect.Size = new System.Drawing.Size(75, 23);
             this.btnSelect.TabIndex = 11;
@@ -340,7 +262,8 @@ namespace CourseSelectionManagementSystem
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(936, 581);
+            this.btnSubmit.Enabled = false;
+            this.btnSubmit.Location = new System.Drawing.Point(936, 602);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(75, 23);
             this.btnSubmit.TabIndex = 12;
@@ -350,27 +273,13 @@ namespace CourseSelectionManagementSystem
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(934, 539);
+            this.btnCancel.Location = new System.Drawing.Point(936, 486);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 13;
             this.btnCancel.Text = "撤销";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(909, 344);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
-            this.textBox1.TabIndex = 14;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(911, 411);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 21);
-            this.textBox2.TabIndex = 15;
             // 
             // oleDbSelectCommand3
             // 
@@ -425,7 +334,7 @@ namespace CourseSelectionManagementSystem
             // labelCourseAvailable
             // 
             this.labelCourseAvailable.AutoSize = true;
-            this.labelCourseAvailable.Location = new System.Drawing.Point(420, 316);
+            this.labelCourseAvailable.Location = new System.Drawing.Point(909, 278);
             this.labelCourseAvailable.Name = "labelCourseAvailable";
             this.labelCourseAvailable.Size = new System.Drawing.Size(41, 12);
             this.labelCourseAvailable.TabIndex = 16;
@@ -434,21 +343,142 @@ namespace CourseSelectionManagementSystem
             // labelCreditAvailable
             // 
             this.labelCreditAvailable.AutoSize = true;
-            this.labelCreditAvailable.Location = new System.Drawing.Point(433, 634);
+            this.labelCreditAvailable.Location = new System.Drawing.Point(909, 318);
             this.labelCreditAvailable.Name = "labelCreditAvailable";
             this.labelCreditAvailable.Size = new System.Drawing.Size(41, 12);
             this.labelCreditAvailable.TabIndex = 17;
             this.labelCreditAvailable.Text = "label5";
             // 
+            // labelTitle
+            // 
+            this.labelTitle.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelTitle.Location = new System.Drawing.Point(298, 9);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(423, 83);
+            this.labelTitle.TabIndex = 18;
+            this.labelTitle.Text = "label5";
+            this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // iDDataGridViewTextBoxColumn1
+            // 
+            this.iDDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.iDDataGridViewTextBoxColumn1.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn1.HeaderText = "课程编号";
+            this.iDDataGridViewTextBoxColumn1.MinimumWidth = 10;
+            this.iDDataGridViewTextBoxColumn1.Name = "iDDataGridViewTextBoxColumn1";
+            // 
+            // courseNameDataGridViewTextBoxColumn1
+            // 
+            this.courseNameDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.courseNameDataGridViewTextBoxColumn1.DataPropertyName = "Course Name";
+            this.courseNameDataGridViewTextBoxColumn1.HeaderText = "课程名称";
+            this.courseNameDataGridViewTextBoxColumn1.MinimumWidth = 10;
+            this.courseNameDataGridViewTextBoxColumn1.Name = "courseNameDataGridViewTextBoxColumn1";
+            // 
+            // creditDataGridViewTextBoxColumn1
+            // 
+            this.creditDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.creditDataGridViewTextBoxColumn1.DataPropertyName = "Credit";
+            this.creditDataGridViewTextBoxColumn1.HeaderText = "学分";
+            this.creditDataGridViewTextBoxColumn1.MinimumWidth = 10;
+            this.creditDataGridViewTextBoxColumn1.Name = "creditDataGridViewTextBoxColumn1";
+            // 
+            // timeDataGridViewTextBoxColumn1
+            // 
+            this.timeDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.timeDataGridViewTextBoxColumn1.DataPropertyName = "Time";
+            this.timeDataGridViewTextBoxColumn1.HeaderText = "上课时间";
+            this.timeDataGridViewTextBoxColumn1.MinimumWidth = 10;
+            this.timeDataGridViewTextBoxColumn1.Name = "timeDataGridViewTextBoxColumn1";
+            // 
+            // teacherNameDataGridViewTextBoxColumn1
+            // 
+            this.teacherNameDataGridViewTextBoxColumn1.DataPropertyName = "Teacher Name";
+            this.teacherNameDataGridViewTextBoxColumn1.HeaderText = "授课教师";
+            this.teacherNameDataGridViewTextBoxColumn1.MinimumWidth = 10;
+            this.teacherNameDataGridViewTextBoxColumn1.Name = "teacherNameDataGridViewTextBoxColumn1";
+            this.teacherNameDataGridViewTextBoxColumn1.Width = 145;
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "课程编号";
+            this.iDDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            // 
+            // courseNameDataGridViewTextBoxColumn
+            // 
+            this.courseNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.courseNameDataGridViewTextBoxColumn.DataPropertyName = "Course Name";
+            this.courseNameDataGridViewTextBoxColumn.HeaderText = "课程名称";
+            this.courseNameDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.courseNameDataGridViewTextBoxColumn.Name = "courseNameDataGridViewTextBoxColumn";
+            // 
+            // creditDataGridViewTextBoxColumn
+            // 
+            this.creditDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.creditDataGridViewTextBoxColumn.DataPropertyName = "Credit";
+            this.creditDataGridViewTextBoxColumn.HeaderText = "学分";
+            this.creditDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.creditDataGridViewTextBoxColumn.Name = "creditDataGridViewTextBoxColumn";
+            // 
+            // timeDataGridViewTextBoxColumn
+            // 
+            this.timeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.timeDataGridViewTextBoxColumn.DataPropertyName = "Time";
+            this.timeDataGridViewTextBoxColumn.HeaderText = "上课时间";
+            this.timeDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.timeDataGridViewTextBoxColumn.Name = "timeDataGridViewTextBoxColumn";
+            // 
+            // teacherNameDataGridViewTextBoxColumn
+            // 
+            this.teacherNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.teacherNameDataGridViewTextBoxColumn.DataPropertyName = "Teacher Name";
+            this.teacherNameDataGridViewTextBoxColumn.HeaderText = "授课教师";
+            this.teacherNameDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.teacherNameDataGridViewTextBoxColumn.Name = "teacherNameDataGridViewTextBoxColumn";
+            // 
+            // labelHint
+            // 
+            this.labelHint.AutoSize = true;
+            this.labelHint.Location = new System.Drawing.Point(936, 543);
+            this.labelHint.Name = "labelHint";
+            this.labelHint.Size = new System.Drawing.Size(41, 12);
+            this.labelHint.TabIndex = 19;
+            this.labelHint.Text = "label5";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.Location = new System.Drawing.Point(59, 373);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(104, 16);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "可选课程列表";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.Location = new System.Drawing.Point(60, 90);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(104, 16);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "已选课程列表";
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1048, 656);
+            this.ClientSize = new System.Drawing.Size(1144, 751);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.labelHint);
+            this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.labelCreditAvailable);
             this.Controls.Add(this.labelCourseAvailable);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.btnSelect);
@@ -463,9 +493,9 @@ namespace CourseSelectionManagementSystem
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainWindow";
-            this.Text = "MainWindow";
+            this.Text = "选课管理系统";
             this.Load += new System.EventHandler(this.MainWindow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataSetCourse11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -489,11 +519,6 @@ namespace CourseSelectionManagementSystem
         private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter2;
         private DataGridView dataGridView2;
         private DataSetSelectedCourse1 dataSetSelectedCourse11;
-        private DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn courseNameDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn creditDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn timeDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn teacherNameDataGridViewTextBoxColumn;
         private Label label1;
         private Label label2;
         private TextBox tbxStudentID;
@@ -502,17 +527,10 @@ namespace CourseSelectionManagementSystem
         private Label label4;
         private Label labelTotalNumber;
         private Label labelTotalCredit;
-        private DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn1;
-        private DataGridViewTextBoxColumn courseNameDataGridViewTextBoxColumn1;
-        private DataGridViewTextBoxColumn creditDataGridViewTextBoxColumn1;
-        private DataGridViewTextBoxColumn timeDataGridViewTextBoxColumn1;
-        private DataGridViewTextBoxColumn teacherNameDataGridViewTextBoxColumn1;
         private Button btnRemove;
         private Button btnSelect;
         private Button btnSubmit;
         private Button btnCancel;
-        private TextBox textBox1;
-        private TextBox textBox2;
         private System.Data.OleDb.OleDbCommand oleDbSelectCommand3;
         private System.Data.OleDb.OleDbCommand oleDbInsertCommand1;
         private System.Data.OleDb.OleDbCommand oleDbUpdateCommand1;
@@ -521,5 +539,19 @@ namespace CourseSelectionManagementSystem
         private DataSetCourseChanged1 dataSetCourseChanged11;
         private Label labelCourseAvailable;
         private Label labelCreditAvailable;
+        private Label labelTitle;
+        private DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn courseNameDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn creditDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn timeDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn teacherNameDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn courseNameDataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn creditDataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn timeDataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn teacherNameDataGridViewTextBoxColumn1;
+        private Label labelHint;
+        private Label label5;
+        private Label label6;
     }
 }

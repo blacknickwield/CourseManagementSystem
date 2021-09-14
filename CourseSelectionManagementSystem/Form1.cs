@@ -94,5 +94,11 @@ namespace CourseSelectionManagementSystem
                 password = value;
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            labelTitle.Text = "选课管理系统\n"
+                + "登录界面";
+        }
     }
 }

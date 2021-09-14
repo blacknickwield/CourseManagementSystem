@@ -32,16 +32,21 @@ namespace CourseSelectionManagementSystem
 
             if (courseAvailableMin > 0)
             {
-                labelCourseAvailable.Text = "仍需选至少" + courseAvailableMin.ToString() + "门课程";
+                labelCourseAvailable.Text = "你已选择" + selectedCourseNumber.ToString() + "门课程，"
+                    + "还需选至少" + courseAvailableMin.ToString() + "门课程";
+                labelCourseAvailable.ForeColor = Color.Red;
             }
             else if (courseAvailableMax >= 0)
             {
-                labelCourseAvailable.Text = "还可再选" + courseAvailableMax.ToString() + "门课程";
+                labelCourseAvailable.Text = "你已选择" + selectedCourseNumber.ToString() + "门课程，"
+                    + "还可再选" + courseAvailableMax.ToString() + "门课程";
+                labelCourseAvailable.ForeColor = Color.Green;
                 courseCheck = true;
             }
             else
             {
-                labelCourseAvailable.Text = "超过数量上限";
+                labelCourseAvailable.Text = "你选择的课程已超过数量上限，请先进行退课";
+                labelCourseAvailable.ForeColor = Color.Red;
             }
 
 
@@ -60,25 +65,45 @@ namespace CourseSelectionManagementSystem
 
             if (creditAvailableMin > 0)
             {
-                labelCreditAvailable.Text = "仍需选修至少" + creditAvailableMin.ToString() + "学分";
+                labelCreditAvailable.Text = "您已选修" + selectedCreditNumber.ToString() + "学分," 
+                    +"还需选修至少" + creditAvailableMin.ToString() + "学分";
+                labelCreditAvailable.ForeColor = Color.Red;
             }
             else if (creditAvailableMax >= 0)
             {
-                labelCreditAvailable.Text = "还可再选修" + creditAvailableMax + "学分";
+                labelCreditAvailable.Text = "您已选修" + selectedCreditNumber.ToString() + "学分,"
+                    + "还可再选修" + creditAvailableMax + "学分";
+                labelCreditAvailable.ForeColor = Color.Green;
                 creditCheck = true;
             }
             else
             {
-                labelCreditAvailable.Text = "超过学分上限";
+                labelCreditAvailable.Text = "您选修的学分已超过学分上限，请进行调整";
+                labelCreditAvailable.ForeColor = Color.Red;
             }
 
+            if (courseCheck && creditCheck)
+            {
+                labelHint.Text = "你的选课满足要求\n\n"
+                    + "可以进行提交";
+                labelHint.ForeColor = Color.Green;
+                btnSubmit.Enabled = true;
+            }
+            else
+            {
+                labelHint.Text = "您的选课不满足要求\n\n"
+                    + "不可进行提交";
+                labelHint.ForeColor = Color.Red;
+                btnSubmit.Enabled = false;
+            }
         }
 
         private void MainWindow_Load(object sender, EventArgs e)
         {
             tbxStudentID.Text = studentID;
             tbxName.Text = name;
-
+            labelTitle.Text = "你好，" + name
+                + "\n欢迎来到选课管理系统";
             // 查询当前学生可选的课
             String conditionStatement1 = " AND Course.id NOT IN " +
                 "(SELECT SC.course_id FROM Student_Course AS SC WHERE SC.student_id = '" + studentID + "')";
@@ -170,8 +195,8 @@ namespace CourseSelectionManagementSystem
                 courseRemovedList.Add(oldRow["ID"]);
             if (courseSelectedList.Contains(oldRow["ID"]))
                 courseSelectedList.Remove(oldRow["ID"]);
-            textBox1.Text = courseSelectedList.Count.ToString();
-            textBox2.Text = courseRemovedList.Count.ToString();
+            //textBox1.Text = courseSelectedList.Count.ToString();
+            //textBox2.Text = courseRemovedList.Count.ToString();
             dataSetSelectedCourse11.Tables["Course"].Rows.RemoveAt(dataGridView2.CurrentRow.Index);
             windowUpdate();
         }
@@ -199,8 +224,8 @@ namespace CourseSelectionManagementSystem
                 courseSelectedList.Add(oldRow["ID"]);
             if (courseRemovedList.Contains(oldRow["ID"]))
                 courseRemovedList.Remove(oldRow["ID"]);
-            textBox1.Text = courseSelectedList.Count.ToString();
-            textBox2.Text = courseRemovedList.Count.ToString();
+            //textBox1.Text = courseSelectedList.Count.ToString();
+            //textBox2.Text = courseRemovedList.Count.ToString();
             dataSetCourse11.Tables["Course"].Rows.RemoveAt(dataGridView1.CurrentRow.Index);
             windowUpdate();
         }
